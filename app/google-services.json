@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "171198921072",
+    "firebase_url": "https://introtuce-3a74c.firebaseio.com",
+    "project_id": "introtuce-3a74c",
+    "storage_bucket": "introtuce-3a74c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171198921072:android:b3543776680f36b42177b5",
+        "android_client_info": {
+          "package_name": "com.darshanudagire.introtuce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171198921072-k8mqg11ikc9gj3u12im5rdj3mihcb0j6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5pWGGZFxpAYRGLxGU5n4Yzn9_nf6gEaE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171198921072-k8mqg11ikc9gj3u12im5rdj3mihcb0j6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/jenny">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_toLeftOf="@+id/deleteBtn_id"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/name_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Jenny joe"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--sex-->
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/sex_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:fontFamily="@font/nunito"
+                        android:textSize="15dp">
+                    </androidx.appcompat.widget.AppCompatTextView>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" | "
+                        android:fontFamily="@font/nunito"
+                        android:textSize="15dp">
+                    </androidx.appcompat.widget.AppCompatTextView>
+
+                    <!--age-->
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/age_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25"
+                        android:fontFamily="@font/nunito"
+                        android:textSize="15dp">
+                    </androidx.appcompat.widget.AppCompatTextView>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" | "
+                        android:fontFamily="@font/nunito"
+                        android:textSize="15dp">
+                    </androidx.appcompat.widget.AppCompatTextView>
+
+                    <!--city-->
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/city_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pune"
+                        android:fontFamily="@font/nunito"
+                        android:textSize="15dp">
+                    </androidx.appcompat.widget.AppCompatTextView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/deleteBtn_id"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/ic_baseline_delete_24"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+            </androidx.appcompat.widget.AppCompatButton>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
