@@ -77,7 +77,6 @@ public class AllUsersAdapter extends RecyclerView.Adapter<AllUsersAdapter.NewOrd
                 ProgressDialog progressDialog = new ProgressDialog(context);
                 progressDialog.setMessage("Deleting user from firebase..!!");
                 progressDialog.setCancelable(false);
-                progressDialog.show();
                 FirebaseFirestore db = FirebaseFirestore.getInstance();
                 new GenericDialog.Builder(context)
                         .setCancelable(false)
@@ -87,6 +86,7 @@ public class AllUsersAdapter extends RecyclerView.Adapter<AllUsersAdapter.NewOrd
                         .addNewButton(R.style.YesBtn, new GenericDialogOnClickListener() {
                             @Override
                             public void onClick(View view) {
+                                progressDialog.show();
                                 db.collection("Users").document(userList.get(position).get("phoneNumber").toString()).delete().addOnCompleteListener(new OnCompleteListener<Void>() {
                                     @Override
                                     public void onComplete(@NonNull Task<Void> task) {
